@@ -1,0 +1,80 @@
+
+h1{
+    color: grey;
+    font-feature-settings: "akhn";
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+*{
+    box-sizing: border-box;
+}
+div {
+  background-color: rgb(128, 128, 128);
+  border: 3.5px solid black;
+  margin: 20px;
+   width: 20%;
+  height: 250px;
+}
+.content{
+    padding: 5px;
+    overflow: auto;
+font-family: Helvetica;
+color: black;
+clear: both;
+font-size: 20px;
+}
+.heading {
+  float: right;
+  width: 100px;
+  padding: 5px;
+  margin: -3px -3px 0px;
+  border: 3.5px solid black;
+  font-size: 125%;
+  font-weight: bold;
+}
+#chicken {
+  background-color: rgb(173, 173, 15);
+}
+#Beef {
+  background-color: rgb(161, 53, 71);
+}
+#sushi {
+  background-color: rgb(22, 55, 22);
+}
+
+.row {
+		width: 100%;
+	}
+/*Destop*/
+@media (min-width: 992px){
+    .col-lg-4 {
+        float: left;
+        width: 30%;
+    }
+}
+/*tab*/
+@media (min-width:768px) and (max-width:991px){
+    .col-md-6{
+        width:50%;
+        float: left;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .col-md-12{
+        width: 100%;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*mobile*/
+@media(max-width:767px){
+
+    .col-sm-12{
+        width: 100%;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
