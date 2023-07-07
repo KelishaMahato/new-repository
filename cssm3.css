@@ -1,0 +1,31 @@
+
+.content{
+    overflow: auto;
+    font-family: Helvetica;
+    color: black;
+    clear: both;
+}
+#me{
+    font-size: 25px;
+    text-align: left;
+
+}
+h1{
+    color: rgb(91, 82, 82);
+    font-feature-settings: "akhn";
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+div p{
+    font-size: 18px;
+}
+.menu {
+  background-color: pink;
+  border: 3.5px solid black;
+  margin: 20px;
+  height: 300px;
+  overflow: auto;
+  text-align: center;
+}
+
