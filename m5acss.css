@@ -1,0 +1,249 @@
+body {
+  font-size: 16px;
+  color: #823737;
+  background-color: rgb(250, 201, 209);
+  font-family: 'Oxygen', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+/** HEADER **/
+nav{
+  background: rgb(235, 108, 127);
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.navbar-brand{
+  padding-top: 25px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#navbar{
+  color: #823737;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #c54141;
+  line-height: .75;
+  float: right;
+
+}
+li:hover{
+  color: #3F0C1F;
+  background: white;
+}
+.navbar-brand  { /* Restaurant name */
+  color: #0e0a0a;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #531212;
+  line-height: .75;
+}
+/* END HEADER */
+
+/* body */
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+  background: url('https://www.flickr.com/photos/iweatherman/8070604301/') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/02/05/Baked-Feta-Pasta-4_s4x3.jpg.rend.hgtvcom.406.406.suffix/1615916524567.jpeg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+
+/* .category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+} */
+/* .category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+} */
+/* .category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+} */
+
+.menu-item-tile{
+  margin-bottom: 25px;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+.menu-item-tile .menu-item-price{
+  font-size: .6em;
+}
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+
+.menu-item-photo div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+
+.menu-item-description {
+  padding-right: 30px;
+}
+
+h3.menu-item-tile {
+  margin: 0 0 10px;
+}
+
+.menu-item-details{
+  font-size: 0.9em;
+  font-style: italic;
+}
+/* END MENU CATEGORIES PAGE */
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+
+  /* Home Page */
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
+/* for about */
+h4{
+  text-align: justify;
+  color: rgb(176, 62, 62);
+
+}
+/* end about */
+
+h1{
+    color: rgb(91, 82, 82);
+    font-feature-settings: "akhn";
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
